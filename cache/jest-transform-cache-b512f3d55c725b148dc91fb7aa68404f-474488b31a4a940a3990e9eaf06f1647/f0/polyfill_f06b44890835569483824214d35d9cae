@@ -1,0 +1,7 @@
+61428fd9be5572f2f4f4c41e89c0f52d
+'use strict';
+
+var implementation = require('./implementation');
+module.exports = function getPolyfill() {
+  return implementation;
+};

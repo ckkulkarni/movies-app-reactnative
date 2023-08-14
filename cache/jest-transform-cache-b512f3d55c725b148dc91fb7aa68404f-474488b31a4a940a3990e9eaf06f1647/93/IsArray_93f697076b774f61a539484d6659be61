@@ -1,0 +1,5 @@
+5b6a3302150ac43eb74c369d7e9cc4d8
+'use strict';
+
+// https://ecma-international.org/ecma-262/6.0/#sec-isarray
+module.exports = require('../helpers/IsArray');

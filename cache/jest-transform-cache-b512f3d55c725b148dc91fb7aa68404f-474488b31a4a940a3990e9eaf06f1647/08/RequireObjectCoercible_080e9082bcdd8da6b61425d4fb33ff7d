@@ -1,0 +1,4 @@
+672ab72743396d146fe739427f02a7a2
+'use strict';
+
+module.exports = require('../5/CheckObjectCoercible');

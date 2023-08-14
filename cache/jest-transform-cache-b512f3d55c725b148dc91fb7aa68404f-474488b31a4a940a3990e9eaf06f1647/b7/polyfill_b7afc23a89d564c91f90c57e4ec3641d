@@ -1,0 +1,7 @@
+2e1b9e9a2ad08a44e5462989ac0ee9a0
+'use strict';
+
+var implementation = require('./implementation');
+module.exports = function getPolyfill() {
+  return Array.prototype.flat || implementation;
+};

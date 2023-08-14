@@ -1,0 +1,18 @@
+6ae2193854c1e71989b19ef7e97df6b4
+'use strict';
+
+var RequireObjectCoercible = require('es-abstract/2022/RequireObjectCoercible');
+var callBound = require('call-bind/callBound');
+var $isEnumerable = callBound('Object.prototype.propertyIsEnumerable');
+var $push = callBound('Array.prototype.push');
+module.exports = function entries(O) {
+  var obj = RequireObjectCoercible(O);
+  var entrys = [];
+  for (var key in obj) {
+    if ($isEnumerable(obj, key)) {
+      // checks own-ness as well
+      $push(entrys, [key, obj[key]]);
+    }
+  }
+  return entrys;
+};

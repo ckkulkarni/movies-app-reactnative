@@ -1,0 +1,4 @@
+b3f9e10c13542667f0ed60bec74b7dd6
+'use strict';
+
+module.exports = require('./cjs/react-shallow-renderer.js');

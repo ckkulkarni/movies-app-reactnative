@@ -1,0 +1,11 @@
+e5b67b7b0b098c94307bd6e9fdf61320
+'use strict';
+
+var GetIntrinsic = require('get-intrinsic');
+var $Array = GetIntrinsic('%Array%');
+
+// eslint-disable-next-line global-require
+var toStr = !$Array.isArray && require('call-bind/callBound')('Object.prototype.toString');
+module.exports = $Array.isArray || function IsArray(argument) {
+  return toStr(argument) === '[object Array]';
+};

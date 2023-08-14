@@ -1,0 +1,23 @@
+ba220bccdd15637000eeebd8a49e0e94
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.matchStringProp = matchStringProp;
+/**
+ * Matches the given string property again string or regex matcher.
+ *
+ * @param prop - The string prop to match.
+ * @param matcher - The string or regex to match.
+ * @returns - Whether the string prop matches the given string or regex.
+ */
+function matchStringProp(prop, matcher) {
+  if (!prop) {
+    return false;
+  }
+  if (typeof matcher === 'string') {
+    return prop === matcher;
+  }
+  return prop.match(matcher) != null;
+}

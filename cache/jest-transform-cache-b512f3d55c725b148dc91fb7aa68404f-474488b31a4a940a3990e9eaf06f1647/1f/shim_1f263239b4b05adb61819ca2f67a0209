@@ -1,0 +1,16 @@
+28ba4ba7211c0b971b2377b0c128b3a1
+'use strict';
+
+var getPolyfill = require('./polyfill');
+var define = require('define-properties');
+module.exports = function shimValues() {
+  var polyfill = getPolyfill();
+  define(Object, {
+    values: polyfill
+  }, {
+    values: function testValues() {
+      return Object.values !== polyfill;
+    }
+  });
+  return polyfill;
+};

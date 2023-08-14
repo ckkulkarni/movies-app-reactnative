@@ -1,0 +1,21 @@
+558bb4ba3fb7e44b3242aa07b0f6138d
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var Token = /** @class */function () {
+  function Token(line, location) {
+    this.line = line;
+    this.location = location;
+    this.isEof = line == null;
+  }
+  Token.prototype.getTokenValue = function () {
+    return this.isEof ? 'EOF' : this.line.getLineText(-1);
+  };
+  Token.prototype.detach = function () {
+    // TODO: Detach line, but is this really needed?
+  };
+  return Token;
+}();
+exports.default = Token;

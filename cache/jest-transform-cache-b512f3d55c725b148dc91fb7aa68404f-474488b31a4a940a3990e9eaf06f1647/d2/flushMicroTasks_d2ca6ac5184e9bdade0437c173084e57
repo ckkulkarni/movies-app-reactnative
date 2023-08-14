@@ -1,0 +1,17 @@
+3358005a161680488f98f791e0412292
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.flushMicroTasks = flushMicroTasks;
+var _timers = require("./helpers/timers");
+function flushMicroTasks() {
+  return {
+    // using "thenable" instead of a Promise, because otherwise it breaks when
+    // using "modern" fake timers
+    then(resolve) {
+      (0, _timers.setImmediate)(resolve);
+    }
+  };
+}

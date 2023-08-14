@@ -1,0 +1,6 @@
+ad3c35b028482245ceba5dc08210cccb
+// full library entry point.
+
+"use strict";
+
+module.exports = require("./src/index");

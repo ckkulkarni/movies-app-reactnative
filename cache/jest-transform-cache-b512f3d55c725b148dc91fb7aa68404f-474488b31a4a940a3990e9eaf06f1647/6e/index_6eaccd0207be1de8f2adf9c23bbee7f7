@@ -1,0 +1,2 @@
+a7956090463b3a68f9f3d57dbe6f4852
+module.exports = process.env.NODE_ENV === 'production' ? require('./build/mocks') : require('./build');

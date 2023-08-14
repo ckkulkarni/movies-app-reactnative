@@ -1,0 +1,2 @@
+b03e2a1ce9dfadf364605f3b8030c7a6
+module.exports = require('util').inspect;

@@ -1,0 +1,6 @@
+fd009a7ffb6e639ae922b7dc7a6c7c4d
+// minimal library entry point.
+
+"use strict";
+
+module.exports = require("./src/index-minimal");

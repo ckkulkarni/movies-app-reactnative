@@ -1,0 +1,4 @@
+cd01f191ae6e67a7f235c498f07cfd96
+'use strict';
+
+module.exports = require('react-shallow-renderer');

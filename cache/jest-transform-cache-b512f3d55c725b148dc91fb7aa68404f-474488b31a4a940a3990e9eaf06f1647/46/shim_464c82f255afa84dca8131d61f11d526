@@ -1,0 +1,16 @@
+6921846bec72765df5e854e6fe1cce09
+'use strict';
+
+var define = require('define-properties');
+var getPolyfill = require('./polyfill');
+module.exports = function shimArrayPrototypeMap() {
+  var polyfill = getPolyfill();
+  define(Array.prototype, {
+    filter: polyfill
+  }, {
+    filter: function () {
+      return Array.prototype.filter !== polyfill;
+    }
+  });
+  return polyfill;
+};

@@ -1,0 +1,8 @@
+612c8d3d3f4c9ffa5bfaf63fe54ba3f3
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _getPrototypeOf(o);
+}
+module.exports = _getPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;

@@ -1,0 +1,6 @@
+56d1264617db2bbda5b19ccc2c5b1825
+'use strict';
+
+module.exports = function isPrimitive(value) {
+  return value === null || typeof value !== 'function' && typeof value !== 'object';
+};

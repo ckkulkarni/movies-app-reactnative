@@ -1,0 +1,9 @@
+4b9d919fca9e7872686022addd21f55c
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.filterNodeByType = void 0;
+const filterNodeByType = (node, type) => node.type === type;
+exports.filterNodeByType = filterNodeByType;

@@ -1,0 +1,9 @@
+f835e4eb620bb301dd187ed2ecdc3862
+'use strict';
+
+var arrayMethodBoxesProperly = require('es-array-method-boxes-properly');
+var implementation = require('./implementation');
+module.exports = function getPolyfill() {
+  var method = Array.prototype.filter;
+  return arrayMethodBoxesProperly(method) ? method : implementation;
+};

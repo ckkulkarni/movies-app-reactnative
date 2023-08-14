@@ -1,0 +1,7 @@
+e04864c704b4a56fa8263e236444ed41
+'use strict';
+
+// https://ecma-international.org/ecma-262/6.0/#sec-ispropertykey
+module.exports = function IsPropertyKey(argument) {
+  return typeof argument === 'string' || typeof argument === 'symbol';
+};

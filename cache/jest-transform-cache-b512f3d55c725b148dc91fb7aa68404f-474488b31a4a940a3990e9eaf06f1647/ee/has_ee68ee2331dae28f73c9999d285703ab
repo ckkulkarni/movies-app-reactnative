@@ -1,0 +1,2 @@
+3eb59ba96627c7c9884317dc49879aa4
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
